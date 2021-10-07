@@ -29,7 +29,7 @@ font-size: 30px;
 		.Papas{
 			position: absolute;
 top: 20px;
-left: 50px;
+left: 100px;
 height:50px;
 width:150px;
 background:red;
@@ -40,7 +40,7 @@ align-content: center;
 		.Chocolatinas{
 			position: absolute;
 top: 50px;
-left: 50px;
+left: 100px;
 height:50px;
 width:150px;
 background:red;
@@ -53,7 +53,7 @@ align-content: center;
 		.Doritos{
 			position: absolute;
 top: 80px;
-left: 50px;
+left: 100px;
 height:50px;
 width:150px;
 background:red;
@@ -66,7 +66,7 @@ align-content: center;
 		.prod1{
 			position: absolute;
 top: 30px;
-left: 220px;
+left: 320px;
 height:10px;
 width:100px;
 background: orange;
@@ -74,7 +74,7 @@ background: orange;
 		.cant{
 			position: absolute;
 top: 60px;
-left: 220px;
+left: 320px;
 height:10px;
 width:100px;
 background: blue;
@@ -84,7 +84,7 @@ background: blue;
 		.pre{
 position: absolute;
 top: 90px;
-left: 220px;
+left: 320px;
 height:10px;
 width:100px;
 
@@ -96,7 +96,7 @@ background:aqua;
 				.di{
 position: absolute;
 top: 120px;
-left: 220px;
+left: 320px;
 height:10px;
 width:100px;
 background:linear-gradient(to bottom, #9155f1,#f5045f);
@@ -137,7 +137,7 @@ align-content: center;
 	<div id="chocolatin"  class="Chocolatinas " id="chocolatina">Chocolatinas $2500</div>
 	<div id="dorito"class="Doritos" id="doritos">Doritos $1500</div>
 	<div class="boton1" onclick="calculadora()">Ver la factura</div>
-	<div class="boton2"  id="calcular"></div>
+	<div class="boton2" onclick="calculadora()"  id="calcular"></div>
 	</form>
 	<script>
 
@@ -155,17 +155,17 @@ align-content: center;
 	if (x="producto") {
 		if (y<=pap) {
 			mult=y*a
-			resul=mult-b
+			resul=b-mult
 			calcular.innerHTML="Compraste:"+ y +" y la cuenta es:"+mult
 }
 if (y<=choc) {
 			mult=y*a
-			resul=mult-b
+			resul=b-mult
 			calcular.innerHTML="Compraste:"+ y +" y la cuenta es:"+mult
 }
 if (y<=dor) {
 			mult=y*a
-			resul=mult-b
+			resul=b-mult
 			calcular.innerHTML="Compraste:"+ y +" y la cuenta es:"+mult+"y tu devuelta es"+resul
 }
 
