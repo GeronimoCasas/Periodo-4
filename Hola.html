@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body bgcolor="gray">
+   
+
+
+         
+    <div id="respu" class="adios">
+
+
+
+        <script>
+
+            op1 = Number(prompt("Elige Una opcion: Sumar(1), Restar(2), Multiplicar(3), Dividir(4)"));
+            
+            num1 = Number(prompt("Elija el primer numero"));
+
+            num2 = Number(prompt("Elija el segundo numero"));
+
+            switch(op1) {
+
+                case 1:
+
+                    suma = num1 + num2;
+
+                    respu.innerHTML="<center>Hola <br> el resultado es: <br>" + suma + " <br>gracias</center>";
+
+                    break;
+
+                case 2:
+                    
+                    resta = num1 - num2;
+
+                    respu.innerHTML="<center>Hola <br> el resultado es: <br>" + resta + " <br>gracias</center>";
+
+                    break;
+
+                case 3:
+                    
+                    multi = num1 * num2;
+
+                    respu.innerHTML="<center>Hola <br> el resultado es: <br>" + multi + " <br>gracias</center>";
+
+                    break;
+
+                case 4:
+                    
+                    if(num2 != 0){
+
+                        divi = num1 / num2;
+
+                    }
+                    else{
+
+                        respu.innerHTML="No se puede dividir por cero";
+
+                    }
+
+                    respu.innerHTML="<center>Hola <br> el resultado es: <br>" + divi + " <br>gracias</center>";
+
+                    break;
+
+                default:
+
+                    break;
+
+            }
+              
+        </script>
+    
+    </div>
+
+
+</body>
+</html>     
