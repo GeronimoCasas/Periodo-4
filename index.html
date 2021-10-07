@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ACTIVIDAD 3 INFORMATICA</title>
+	<style>
+
+		.boton1{
+			position: absolute;
+top: 360px;
+left: 600px;
+height:100px;
+width:300px;
+background: linear-gradient(to bottom, #5454A3,#10bde9,#8bebc6);
+color: black;
+align-content: center;
+font-size: 40px;
+		}
+		.boton2{
+			position: absolute;
+top: 480px;
+left: 320px;
+height:300px;
+width:890px;
+background: pink;
+color: black;
+align-content: center;
+font-size: 80px;
+		}
+		.Papas{
+			position: absolute;
+top: 60px;
+left: 100px;
+height:150px;
+width:400px;
+background:red;
+color: black;
+align-content: center;
+font-size: 35px;
+
+		}
+		.Chocolatinas{
+			position: absolute;
+top: 100px;
+left: 100px;
+height:100px;
+width:400px;
+background:red;
+color: black;
+align-content: center;
+font-size: 35px;
+
+
+		}
+
+		.Doritos{
+			position: absolute;
+top: 140px;
+left: 100px;
+height:10px;
+width:400px;
+background:red;
+color: black;
+align-content: center;
+font-size: 35px;
+
+
+		}
+		
+		.prod1{
+			position: absolute;
+top: 300px;
+left: 320px;
+height:40px;
+width:300px;
+background: orange;
+font-size: 20px;
+		}
+		.cant{
+			position: absolute;
+top: 300px;
+left: 600px;
+height:40px;
+width:300px;
+background: blue;
+font-size: 20px;
+
+
+		}
+		.pre{
+position: absolute;
+top: 90px;
+left: 320px;
+height:10px;
+width:100px;
+
+background:aqua;
+
+
+		}
+
+				.di{
+position: absolute;
+top: 300px;
+left: 900px;
+height:40px;
+width:300px;
+background:linear-gradient(to bottom, #9155f1,#f5045f);
+font-size: 20px;
+
+
+		}
+		.Dad{
+position: absolute;
+top: 60px;
+left: 500px;
+height:150px;
+width:400px;
+background: linear-gradient(to bottom, #0909FA,#0256f3, #028dff,#00e1ff);
+color: white;
+align-content: center;
+font-size: 45px;
+
+
+
+		}
+
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+	<form>
+		<center><label><h1>Tienda de Doña Juana</h1></label></center>
+		<div><input type="text" class="prod1" id="producto"placeholder="Producto"></input></div>
+		<div><input type="text" id="cantidad" class="cant" placeholder="Cantidad"></input></div>
+		<div><input type="text" id="precio" class="pre" placeholder="Precio"></input></div>
+		<div><input type="text" id="dinero" class="di" placeholder="Dinero"></input></div>
+		<div class="Dad">Solo hay 10 cantidades por producto</div>
+	<div  class="Papas" id="papitas">Papitas $3500</div>
+	<div id="chocolatin"  class="Chocolatinas " id="chocolatina">Chocolatinas $2500	</div>
+	<div id="dorito"class="Doritos" id="doritos">Doritos $1500</div>
+	<div class="boton1" onclick="calculadora()">Ver la factura</div>
+	<div class="boton2" onclick="calculadora()"  id="calcular"></div>
+	</form>
+	<script>
+
+		function calculadora() {
+	x=(producto.value)
+	y=Number(cantidad.value)
+	a=Number(precio.value)
+	b=Number(dinero.value)
+
+
+
+	pap=10
+	choc=10
+	dor=10
+	if (x="producto") {
+		if (y<=pap) {
+			mult=y*a
+			resul=b-mult
+			calcular.innerHTML="Compraste:"+ y +" productos, y la cuenta es:"+mult
+}
+if (y<=choc) {
+			mult=y*a
+			resul=b-mult
+			calcular.innerHTML="Compraste:"+ y +" productos, y la cuenta es:"+mult
+}
+if (y<=dor) {
+			mult=y*a
+			resul=b-mult
+			calcular.innerHTML="Compraste:"+ y +" productos y la cuenta es:"+mult+"y tu devuelta es"+resul
+}
+
+		}
+	}
+	</script>
+
+</body>
+</html>
